@@ -1,0 +1,8 @@
+export const CREATE_USER='CREATE_USER';
+export const EDIT_USER='EDIT_USER';
+export const DELETE_USER='DELETE_USER';
+export const SELECTED_USER='SELECTED_USER';
+export const ADD_TODOS='ADD_TODOS';
+export const EDIT_TODOS='EDIT_TODOS';
+export const DELETE_TODOS='DELETE_TODOS';
+export const SELECTED_TODOS='SELECTED_TODOS';
