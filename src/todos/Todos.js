@@ -67,7 +67,7 @@ const Todos =({todos,addTodos,deleteTodo,selectTodo,editTodo})=>{
 
 
 const mapStateToProps=(state)=>{
-    console.log(state);
+    // localStorage.todos=JSON.stringify(state.todos)
     return {todos:state.todos}
 }
 

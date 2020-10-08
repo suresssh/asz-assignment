@@ -30,7 +30,7 @@ const UserModal = ({selectedUser, userModalVisible: umv, handleOk, handleCancel 
         handleOk(values);
         setLoader(false)
         form.resetFields();
-      },3000)
+      },2500)
   };
 
     const onFinishFailed = errorInfo => {
@@ -48,6 +48,7 @@ const UserModal = ({selectedUser, userModalVisible: umv, handleOk, handleCancel 
         onFinishFailed={onFinishFailed}
       >
         <Modal
+        title="Create New User"
         visible={userModalVisible}
         onCancel={()=>(handleCancel(),form.resetFields())}
         onOk={form.submit}

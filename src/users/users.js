@@ -60,6 +60,7 @@ const Users =({createUser,users,deleteUser,editUser,selectUser})=>{
 }
 
 const mapStateToProps=(state)=>{
+    state.users.users_list.length&& (localStorage.users=JSON.stringify(state.users))
     return {users:state.users}
 }
 

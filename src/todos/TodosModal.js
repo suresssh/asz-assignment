@@ -29,7 +29,7 @@ const TodosModal = ({ selectedTodo,todoModalVisible: tmv, handleOk, handleCancel
           handleOk(values);
           setLoader(false)
           form.resetFields();
-        },3000)
+        },2500)
     };
 
     const onFinishFailed = errorInfo => {
@@ -48,6 +48,7 @@ const TodosModal = ({ selectedTodo,todoModalVisible: tmv, handleOk, handleCancel
         on
       >
         <Modal
+        title="Add New Todo"
         visible={todoModalVisible}
         onCancel={()=>(handleCancel(),form.resetFields())}
         onOk={form.submit}
