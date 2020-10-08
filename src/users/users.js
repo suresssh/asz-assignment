@@ -19,12 +19,12 @@ const Users =({createUser,users,deleteUser,editUser,selectUser})=>{
           key: 'personname',
           render: text => <a>{text}</a>,
         },
-        {
-          title: 'Email Id',
-          dataIndex: 'emaild',
-          key: 'emaild',
-          render: text => <a>{text}</a>,
-        },
+        // {
+        //   title: 'Email Id',
+        //   dataIndex: 'emaild',
+        //   key: 'emaild',
+        //   render: text => <a>{text}</a>,
+        // },
         {
           title: 'Action',
           key: 'action',
