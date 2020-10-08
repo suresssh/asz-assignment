@@ -19,7 +19,7 @@ const TodosModal = ({ selectedTodo,todoModalVisible: tmv, handleOk, handleCancel
             setTodoModalVisible(tmv)
         }
         if(selectedTodo){
-         form.setFieldsValue({action:selectedTodo.action,dateadded:selectedTodo.dateadded})
+          !loader&&  form.setFieldsValue({action:selectedTodo.action,dateadded:selectedTodo.dateadded})
         }
     })
 

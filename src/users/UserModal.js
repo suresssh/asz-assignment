@@ -20,7 +20,7 @@ const UserModal = ({selectedUser, userModalVisible: umv, handleOk, handleCancel 
             setuserModalVisible(umv)
         }
         if(selectedUser){
-            form.setFieldsValue({personname:selectedUser.personname,emaild:selectedUser.emaild})
+          !loader&& form.setFieldsValue({personname:selectedUser.personname,emaild:selectedUser.emaild})
            }
     })
 
