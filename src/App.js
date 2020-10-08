@@ -34,7 +34,7 @@ const Store = createStore(RootReducer,storeFromLocalStorage(),applyMiddleware(Re
 const App = () => (
   <Provider store={Store} >
     <div className={'appContainer'}>
-    <Tabs defaultActiveKey="1" >
+    <Tabs className={'ant-table'} defaultActiveKey="1" >
       <TabPane tab="Todos" key="1">
         <Todos />
       </TabPane>
